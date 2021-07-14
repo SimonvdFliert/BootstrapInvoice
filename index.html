@@ -15,43 +15,125 @@
 
 <body>
     <main class="flex-shrink-0">
-        <div class="container minHeight">
+        <div class="container h-100 minHeight border border-secondary">
             <!-- For button-->
-            <div class="row mt-3">
+            <div class="row mt-3 ms-1 me-1">
                 <div class="col d-flex justify-content-end p-2 ">
                     <button class="btn btn-dark " type="button">Print this page</button>
                 </div>
             </div>
             
             <!-- Idea Foundary + Client number description-->
-            <div class="row border border-dark h-50 mt-3">
+            <div class="row h-50 mt-3 mb-2">
                 <!-- Idea Foundry Foto-->
-                 <div class="col col-md-">
+                 <div class="col col-md-8">
                      <div class="h-100 d-flex align-items-bottom ">
-                         <img src="/img/IdeaFoundryLogo.png" alt="No foto found">
+                         <img src="/img/IdeaFoundryLogo.png" alt="No foto found" class="img-fluid">
                          
                      </div>
                      
                  </div>
  
                  <!-- Idea Foundry Client Number-->
-                 <div class="col col-md-3">
+                 <div class="col col-md-4">
                      <div class="h-100 d-flex align-items-center justify-content-end ">
-                         Client No: 4908
+                        <h3>Client No: 4908</h3> 
+                        <b> </b>  
                      </div>
                  </div>
             </div>
  
-            <div class="row border border-secondary ">
+            <!-- Date and Invoice-->
+            <div class="row border-top border-bottom border-secondary ms-1 me-1">
                 <!-- Date-->
-                <div class="col col-md-6 mt-2 mb-2">
+                <div class="col col-md-6 mt-3 mb-3">
                     <div> <b>Date:</b> 05/12/2019</div>
                 </div>
                 <!--Invoice Number-->
-                <div class="col col-md-6 text-end mt-2 mb-2">
+                <div class="col col-md-6 text-end mt-3 mb-3">
                     <div> <b>Invoice No: </b> 19005</div>
                 </div>
             </div>
+
+            <!-- Invoice and Pay to row-->
+            <div class="row">
+                <div class="col col-md mt-3 mb-3">
+                    <div> <b>Invoice To:</b></div>
+                    <div>Mark Davis</div>
+                    <div>3333 AI Davis Way</div>
+                    <div>Las Vegas, NV 89118</div>
+                </div>
+                <!--Invoice Number-->
+                <div class="col col-md-2 mt-3 mb-3 ps-5 ">
+                    <div> <b>Pay To:</b></div>
+                    <div>Idea Foundry,Irc.</div>
+                    <div>2705 N. Enterprise St</div>
+                    <div>Kernersville, NC 27284</div>
+                </div>
+            </div>
+
+            <!-- Table-->
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                        <th scope="col">Service</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Rate</th>
+                        <th scope="col">QTY</th>
+                        <th scope="col"> Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-secondary">
+                            <td scope="row">Design</td>
+                            <td>Website Design</td>
+                            <td>$60.00</td>
+                            <td>10</td>
+                            <td>$600.00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Development</td>
+                            <td>Website Development</td>
+                            <td>$150.00</td>
+                            <td>10</td>
+                            <td>$1,500.00</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td scope="row">Deployment</td>
+                            <td>Deployment and Hosting</td>
+                            <td>$450.00</td>
+                            <td>1</td>
+                            <td>$450.00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" colspan="4">Sub Total:</td>
+                            <td>$2,550.00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" colspan="4">Tax:</td>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" colspan="4">Total:</td>
+                            <td>$2,550.00</td>
+                        </tr>
+                    </tbody>
+                    </table>
+            </div>
+            
+            <!-- Warning Note-->
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <b>NOTE:</b> This is a computer generated receipt and does not require a physical signature
+                    </div>
+                </div>
+            </div>
+            
+
+
+
         </div>
     </main>
 
